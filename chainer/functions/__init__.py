@@ -1,6 +1,7 @@
 """Collection of :class:`~chainer.Function` implementations."""
 
 from chainer.functions.activation import clipped_relu
+from chainer.functions.activation import gru
 from chainer.functions.activation import leaky_relu
 from chainer.functions.activation import lstm
 from chainer.functions.activation import prelu
@@ -45,6 +46,7 @@ from chainer.functions.pooling import spatial_pyramid_pooling_2d
 
 ClippedReLU = clipped_relu.ClippedReLU
 clipped_relu = clipped_relu.clipped_relu
+GRU = gru.GRU
 LeakyReLU = leaky_relu.LeakyReLU
 leaky_relu = leaky_relu.leaky_relu
 LSTM = lstm.LSTM
